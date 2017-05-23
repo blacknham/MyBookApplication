@@ -1,0 +1,23 @@
+<html>
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       📔 LogIN  
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="showDetail()">
+          <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <a href = 'home.html'><ion-list inset>
+        <ion-item *ngFor="let signin of signins">
+          <div item-left>{{ signin.Username }}</div>
+          <div item-right>{{ signin.Password}}</div>
+        </ion-item>
+      </ion-list></a>
+</ion-content>
+</html>
